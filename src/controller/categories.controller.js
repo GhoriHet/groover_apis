@@ -69,6 +69,8 @@ const updateCategories = async (request, response) => {
         const categoryId = request.params.categoryId;
         const categoryUpdates = request.body;
 
+        console.log(categoryId, categoryUpdates)
+
         if (!categoryId) {
             return response.status(400).json({
                 success: false,
