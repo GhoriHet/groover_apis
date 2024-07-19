@@ -37,6 +37,12 @@ const productsSchema = new mongoose.Schema({
         trim: true
     },
 
+    stock: {
+        type: Number,
+        required: true,
+        trim: true
+    },
+
     price: {
         type: Number,
         required: true,
