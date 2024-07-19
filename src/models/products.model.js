@@ -19,6 +19,42 @@ const productsSchema = new mongoose.Schema({
         trim: true
     },
 
+    color: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    size: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    weight: {
+        type: Number,
+        required: true,
+        trim: true
+    },
+
+    price: {
+        type: Number,
+        required: true,
+        trim: true
+    },
+
+    mrp: {
+        type: Number,
+        required: true,
+        trim: true
+    },
+
+    sku: {
+        type: Number,
+        required: true,
+        trim: true
+    },
+
     description: {
         type: String,
         required: true,
