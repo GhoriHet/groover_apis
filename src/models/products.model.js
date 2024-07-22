@@ -25,23 +25,23 @@ const productsSchema = new mongoose.Schema({
         trim: true
     },
 
-    size: {
-        type: String,
-        required: true,
-        trim: true
-    },
-
     weight: {
         type: Number,
         required: true,
         trim: true
     },
 
-    stock: {
-        type: Number,
-        required: true,
-        trim: true
-    },
+    sizesAndStocks: [{
+        size: {
+            type: String,
+            required: true,
+            trim: true
+        },
+        stock: {
+            type: Number,
+            required: true
+        }
+    }],
 
     price: {
         type: Number,
