@@ -61,6 +61,42 @@ const productsSchema = new mongoose.Schema({
         trim: true
     },
 
+    material: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    sleeves: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    topfit: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    neck: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    print: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
+    peacenum: {
+        type: String,
+        required: true,
+        trim: true
+    },
+
     description: {
         type: String,
         required: true,

@@ -17,6 +17,12 @@ const createProduct = {
         price: Joi.number().required(),
         mrp: Joi.number().required(),
         description: Joi.string().required(),
+        material: Joi.string().required(),
+        sleeves: Joi.string().required(),
+        topfit: Joi.string().required(),
+        neck: Joi.string().required(),
+        print: Joi.string().required(),
+        peacenum: Joi.string().required(),
         isActive: Joi.boolean()
     }
 }
