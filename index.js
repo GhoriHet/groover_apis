@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const routs = require('./routes/routes_index');
+const routs = require('./src/routes/routes_index');
 app.use('/api', routs);
 
 const port = process.env.PORT || 9001;
